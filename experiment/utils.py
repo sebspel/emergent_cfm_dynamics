@@ -19,7 +19,7 @@ def get_device():
         device = "mps"
     else:
         device = "cpu"
-    return device
+    return torch.device(device)
 
 
 def set_seed(seed: int = 42):
